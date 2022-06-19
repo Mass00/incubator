@@ -1,0 +1,22 @@
+.App {
+  padding: 30px;
+  display: flex;
+}
+
+.App > div {
+  margin-right: 50px;
+}
+
+ul{
+ margin: 0;
+ padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+.todo{
+  display: flex;
+  margin: 0px 10px 0px 0px;
+}
