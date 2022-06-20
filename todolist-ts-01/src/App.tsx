@@ -1,26 +1,25 @@
 import React from 'react';
 import './App.css';
+import { TodoList, TodosProps } from './TodoList';
+
 
 function App() {
+    const task = 
+        {
+            id: 1,
+            text: "HTML",
+            isDone: false
+        }
+        const task2 = 
+        {
+            id: 1,
+            text: "HTML",
+            isDone: false
+        }
     return (
         <div className="App">
-            <div>
-                <h3>What to learn</h3>
-                <div>
-                    <input/>
-                    <button>+</button>
-                </div>
-                <ul>
-                    <li><input type="checkbox" checked={true}/> <span>HTML&CSS</span></li>
-                    <li><input type="checkbox" checked={true}/> <span>JS</span></li>
-                    <li><input type="checkbox" checked={false}/> <span>React</span></li>
-                </ul>
-                <div>
-                    <button>All</button>
-                    <button>Active</button>
-                    <button>Completed</button>
-                </div>
-            </div>
+            <TodoList title={'TEST'} todos={task}/>
+            <TodoList title={'123123'} todos = {task2}/>
         </div>
     );
 }
